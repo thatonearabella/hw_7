@@ -1,0 +1,10 @@
+with open("romeo.txt", "r") as fhand:
+    myList = []
+    for line in fhand:
+        words = line.split()
+        for word in words:
+            if word not in myList:
+                myList.append(word)
+
+    myList.sort()
+    print(myList)
