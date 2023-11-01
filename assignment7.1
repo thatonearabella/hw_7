@@ -1,0 +1,21 @@
+def chop(myList):
+  myList.remove(myList[0])
+  myList.pop()
+  return None
+
+def middle(myList):
+  newList = myList[1:-1]
+  return newList
+
+myList = [1, 2, 3, 4]
+print("my list before call chop function =>", myList)
+chop(myList)
+print("my list after call chop function =>", myList)
+
+myList = [1, 2, 3, 4]
+print("my list before call middle function =>", myList)
+middle(myList)
+print("my list after call middle function =>", myList)
+
+result = middle(myList)
+print("new list after call middle function =>", result)
