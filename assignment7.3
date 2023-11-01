@@ -1,0 +1,20 @@
+myList = []
+while True:
+    try:
+        integer_input = input("Please enter an integer: ")
+        if integer_input == "done":
+            print("---------- Bye !! --------------")
+            break
+        else:
+            integer_input = int(integer_input)
+            myList.append(integer_input)
+            sum = 0
+            count = 0
+            for integer_input in myList:
+                sum += integer_input
+                count += 1
+                
+            average = sum / count
+            print(myList,", average = ", average)
+    except ValueError:
+        print("Please, enter numeric input")
